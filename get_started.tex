@@ -7,6 +7,8 @@
 	linkcolor=black,
 	urlcolor=black
 }
+\usepackage{bibentry}
+\nobibliography*
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage{array}
@@ -29,6 +31,7 @@
 
 
 \begin{document}
+	\nocite{*}
 \maketitle
 \tableofcontents
 \pagebreak
@@ -114,9 +117,8 @@ modern robotics
 
 \subsection{Books on Robotics}
 \subsection{Other Relevant Articles}
-\cite{eppner2015exploitation}
-\cite{Ott2008}
+
 \bibliographystyle{plain}
-\bibliography{biblio}
+%\bibliography{biblio}
 
 \end{document}          
