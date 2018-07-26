@@ -1,0 +1,122 @@
+\documentclass[]{article}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{subcaption}
+\graphicspath{{figures/}}
+\setcounter{tocdepth}{2}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=25mm,
+	right=25mm,
+	top=25mm,
+	bottom=25mm 
+}
+
+% Title Page
+\title{Getting Started at IIT}
+\author{}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\pagebreak
+\section{Group Overview}
+\subsection{IIT}
+The Istituto Italiano di Tecnologia (IIT) is a public research centre based in Genova Bolzaneto.
+The scientific domains of IIT are Robotics, Nanomaterials, Life Sciences and Computational Sciences.
+In robotics, there are a number of research lines, ranging from humanoids, soft robots, social robotics, legged systems, human-robot interaction, dynamic systems, computer vision, etc.
+\paragraph{How to get to IIT} 
+There are three ways to arrive to IIT by public transportation: In the morning there are shuttles that bring people from Brin metro station at 7:45, 8:45, and 9:45. 
+There is a smaller shuttle that stops at Bolzaneto train station at 7:55, 8:25m and 10:20.
+There is the public bus nr. 7 that stops at the bottom of Via Morego. From there it's a 10 minute uphill walk.
+
+\subsection{Group Members}
+\begin{tabular}{m{3cm} m{10cm}}
+	\includegraphics[width=1.0in]{joao.jpeg} & 
+	\textbf{Joao Bimbo} did his PhD in 2016 at King's College London, UK with the title \emph{Touch based object pose estimation for robotic grasping}. He's currently doing work in force and tactile sensing, teleoperation and robot grasping.\\
+	\includegraphics[width=1.0in]{mahdi_pass.jpg} &
+	\textbf{Mahdi Ghazaei} did his PhD in 2006 at the University of Lund, Sweden with the title \emph{On Trajectory Generation for Robots}.
+	His current research is focussed on robot motion control and modelling.\\
+	\includegraphics[width=1.0in]{olmo.jpg} &
+	\textbf{Olmo Moreno} graduated with an MSc in Mechatronics from the Universidad Modelo, Mexico. He is currently doing his PhD at the University of Genova in the topic of teleoperation and passivity control\\		
+\end{tabular}
+\subsection{UNISI people}
+\textbf{Domenico Prattichizzo} is Full Professor at the University of Siena. His research interests include robotic grasping, haptics, mobile robots, visual servoing, panoramic cameras and geometric control theory.\\
+\textbf{Maria Pozzi} is currently doing her PhD at the University of Siena. Her main research interests include robotic grasping and manipulation, underactuated and compliant robotic hands, and educational robotics.\\
+\textbf{Monica Malvezzi} is Assistant Professor at the University of Siena. Her main research interests are in mechanism theory, control of mechanical systems, robotics, vehicle localization, multibody dynamics, haptics, grasping and dexterous manipulation.\\		
+\textbf{Gionata Salvietti} is currently Assistant Professor  at the University of Siena. His research interests are robotic and human grasping, assistive devices, and haptics.\\		
+
+\subsection{Research Areas}
+
+In our group, we are mostly doing research in the fields of robot grasping and manipulation, teleoperation, and modelling of physical systems.
+
+\subsection{Platforms used}
+\paragraph{Hardware} In our laboratory, we have a UR5 6 Degree of freedom (DOF) robot, a Kuka iiwa7 redundant torque-controlled lightweight robot, a Pisa/IIT underactuated soft hand, and a RGB-D Kinect2 camera.
+In the future, we plan on acquiring another hand/gripper and a optical tracking system.
+
+\begin{figure*}[hb!]
+%	\centering
+	\begin{subfigure}[b]{0.22\columnwidth}
+		\includegraphics[width=\columnwidth]{iiwa}
+		\caption{\footnotesize Kuka iiwa7}
+		\label{fig:iiwa}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.22\columnwidth}
+		\includegraphics[width=\columnwidth]{ur5}
+		\caption{\footnotesize UR5}
+		\label{fig:ur5}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.22\columnwidth}
+		\includegraphics[width=\columnwidth]{soft_hand}
+		\caption{\footnotesize Pisa/IIT Hand}
+		\label{fig:soft_hand}
+	\end{subfigure}
+	\caption{Hardware available at our lab\vspace*{-10pt}}
+\end{figure*}
+
+\paragraph{Software} Within our group, we use Ubuntu Linux, with ROS (Robot Operating System)\\ \url{http://www.ros.org}. We use Gazebo \url{http://gazebosim.org} for simulations and Matlab for prototyping. Programming in the ROS framework can be done in Python or C++.
+
+
+\pagebreak
+\section{Possible Projects}
+\subsection{Wall Grasp}
+\input{wall}
+\pagebreak
+\subsection{Transport of a grasped object}
+\input{transport}
+
+
+\pagebreak
+\subsection{Teleoperation and Haptic feedback}
+\input{teleop}
+
+\pagebreak
+\section{Useful Readings for All}
+\subsection{Online courses and tutorials}
+
+ROS
+gazebo
+modern robotics
+
+\subsection{Books on Robotics}
+\subsection{Other Relevant Articles}
+\cite{eppner2015exploitation}
+\cite{Ott2008}
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}          
